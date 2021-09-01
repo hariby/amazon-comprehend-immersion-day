@@ -143,6 +143,7 @@ Resources:
                 Action:
                   - comprehend:DetectSentiment
                   - comprehend:DetectKeyPhrases
+                  - comprehend:DetectEntities
                 Resource: '*'
               - Effect: Allow
                 Action:
