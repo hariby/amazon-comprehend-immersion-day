@@ -51,7 +51,8 @@ Resources:
               - Arn
       Runtime: python3.6
       Timeout: 600
-      CodeUri: s3://aws-ml-blog/artifacts/textract-paragraph-blog/textract-blog-source-code.zip
+      # CodeUri: s3://aws-ml-blog/artifacts/textract-paragraph-blog/textract-blog-source-code.zip
+      CodeUri: s3://ml-blog-sin/artifacts/textract-paragraph-blog/textract-blog-source-code.zip
   TextractPostProcessLambda:
     Type: AWS::Serverless::Function
     Properties:
@@ -63,7 +64,8 @@ Resources:
         - Arn
       Runtime: python3.6
       Timeout: 600
-      CodeUri: s3://aws-ml-blog/artifacts/textract-paragraph-blog/textract-blog-source-code.zip
+      # CodeUri: s3://aws-ml-blog/artifacts/textract-paragraph-blog/textract-blog-source-code.zip
+      CodeUri: s3://ml-blog-sin/artifacts/textract-paragraph-blog/textract-blog-source-code.zip
   SNS:
     Type: AWS::SNS::Topic
   S3InvokeLambdaPermission:
